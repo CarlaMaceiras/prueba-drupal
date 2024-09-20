@@ -2,10 +2,34 @@
 
 Este proyecto consiste en la creación de un sitio web utilizando el tema base Bartik de Drupal 10, con modificaciones realizadas mediante un subtema personalizado. A continuación se detallan los pasos seguidos y las tecnologías utilizadas.
 
+## Requisitos previos
+
+- **Docker**: Asegúrate de tener instalado Docker y DDEV en tu máquina.
+- **DDEV**: Si no tienes instalado DDEV, sigue las [instrucciones de instalación de DDEV](https://ddev.readthedocs.io/en/stable/).
+
 ## Instalación y configuración del tema
 
-1. **Tema base Bartik**: He utilizado Bartik como tema base para este proyecto.
-2. **Subtema personalizado**: Creé un subtema basado en Bartik para realizar las modificaciones necesarias.
+### 1. Clona el repositorio
+
+ - git clone git@github.com:CarlaMaceiras/prueba-drupal.git
+ - cd prueba-drupal
+
+### 2. Configurar DDEV y la base de datos
+
+1. **Instalar dependencias**
+   - composer install
+2. **Iniciar DDEV**
+   - ddev start
+3. **Importar la base de datos**
+   - ddev import-db --src=db.sql.gz
+4. **Acceder al sitio**
+   - http://prueba-drupal.ddev.site
+
+## Tema base Bartik
+He utilizado Bartik como tema base para este proyecto.
+
+## Subtema personalizado
+Creé un subtema basado en Bartik para realizar las modificaciones necesarias.
 
 ## Modificaciones realizadas
 
