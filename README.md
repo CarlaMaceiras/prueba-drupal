@@ -31,4 +31,3 @@ Este proyecto consiste en la creación de un sitio web utilizando el tema base B
 ## Diseño responsive
 
 Gracias al uso de FlexBox y las media queries dentro del archivo `style.scss`, el diseño es completamente adaptable a pantallas de diferentes tamaños, sin que el contenido se rompa en ningún momento.
-
