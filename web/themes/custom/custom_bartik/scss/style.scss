@@ -1,0 +1,451 @@
+$primary: #004a5b;
+
+#header {
+    background-color: white;
+    background-image: none;
+    .section {
+        min-width: 100%;
+        .region-header {
+            background-color: $primary;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 50px;
+            #block-custom-bartik-site-branding {
+                width: 50%;
+                margin: 0;
+                display: flex;
+                .site-branding__text {
+                    background-color: white;
+                    margin: 0;
+                    padding: 0;
+                    height: 30px;
+                    width: 90px;
+                    margin-left: 100px;
+                }
+            }
+            .header {
+                width: 50%;
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+                padding: 15px 20px;
+                .hamburger {
+                    font-size: 30px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                    margin-right: 100px;
+                    z-index: 999;
+                }
+                .hamburguer-menu {
+                    display: none;
+                    list-style: none;
+                    position: absolute;
+                    top: 60px;
+                    right: 70px;
+                    background-color: white;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    padding: 10px 0;
+                    z-index: 998;
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        padding: 10px;
+                        margin: 0;
+                        li {
+                            margin: 10px 0;
+                            padding: 10px 20px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 16px;
+                            display: block;
+                            padding-bottom: 5px;
+                            transition: color 0.3s ease;
+                            position: relative;
+                        }
+                        a::after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 0;
+                            height: 2px;
+                            background-color: $primary;
+                            transition: width 0.3s ease; 
+                        }
+                        a:hover {
+                            color: $primary;
+                        }
+                        a:hover::after{
+                            width: 100%;
+                        }
+                    }
+                    .search-form {
+                        margin-left: 20px;
+                        margin-right: 30px;
+                        display: flex;
+                        gap: 5px;
+                        input[type="text"] {
+                            padding: 8px;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                        }
+                        button {
+                            padding: 8px 12px;
+                            background-color: $primary;
+                            color: white;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                        }
+                        button:hover {
+                            background-color: #555;
+                        }
+                    }
+                }
+                .hamburguer-menu.active {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .region-primary-menu {
+            background-color: white;
+            .field--type-text-with-summary {
+                height: 30px;
+                p {
+                    color: $primary;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 0;
+                    padding: 20px 200px;
+                }
+            }
+        }
+    }
+}
+
+#main-wrapper {
+    min-width: 100%;
+    section {
+        padding: 0;
+        .region-content {
+            #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary {
+            min-height: 195px;
+            background-color: #bdb275;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .container-circles {
+                display: flex;
+                flex-wrap: wrap;
+                .circle {
+                    width: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    div {
+                        width: 100px;
+                        height: 100px;
+                        background-color: $primary;
+                        border-radius: 50%;
+                    }
+                    p {
+                        font-size: 10px;
+                        font-weight: 600;
+                        margin-top: 10px;
+                    }
+                    &.circle1 div {
+                        background-image: url('../images/building.png');
+                    }
+                    &.circle2 div {
+                        background-image: url('../images/group.png');
+                    }
+                    &.circle3 div {
+                        background-image: url('../images/books.png');
+                    }
+                    &.circle4 div {
+                        background-image: url('../images/computer.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 80px;
+                    }
+                }
+            }
+            }
+            #block-custom-bartik-contenidoconimagenes {
+            background-color: $primary;
+            margin-top: 40px;
+            min-height: 380px;
+            .container-content {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                height: auto;
+                margin: auto;
+                .content-title {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 12px;
+                    margin: 20px 50px 10px;
+                }
+                .container-images {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .images {
+                        width: 200px;
+                        display: flex;
+                        position: relative;
+                        height: 250px;
+                        margin-top: 20px;
+                        .block-line {
+                            .olive-line {
+                                background-color: #bdb275;
+                            }
+                            .white-line {
+                                background-color: white;
+                            }
+                        }
+                        .block-images {
+                            position: absolute;
+                            top: 20px;
+                            left: 20px;
+                            .image {
+                                width: 160px;
+                                height: 100px;
+                                display: flex;
+                                align-items: flex-end;
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                border: 2px solid white;
+                                margin-bottom: 15px;
+                                .image-title {
+                                    height: fit-content;
+                                    color: white;
+                                    background-color: $primary;
+                                    font-size: 8px;
+                                    padding: 4px 10px;
+                                }
+                            }
+                            .image.plane {
+                                background-image: url("../images/avion.png");
+                            }
+                            .image.olive {
+                                background-image: url("../images/olivos.jpg");
+                            }
+                            .image.brooklyn {
+                                background-image: url("../images/puente-brookyn.png");
+                            }
+                            .image.mountain {
+                                background-image: url("../images/montaña-nevada.jpg");
+                            }
+                            .image.waterfall {
+                                background-image: url("../images/cascadas-de-bali.jpg");
+                            }
+                            .image.autumn {
+                                background-image: url("../images/10.otoño.jpg");
+                            }
+                        } 
+                    }
+                    .images:nth-child(1) {
+                        .block-line {
+                            width: 30%;
+                            .olive-line {
+                                width: 100%;
+                                height: 80%;
+                            }
+                        }
+                    }
+                    .images:nth-child(2) {
+                        justify-content: center;
+                        .block-line {
+                            width: 60%;
+                            display: flex;
+                            .olive-line {
+                                width: 80%;
+                                height: 80%;
+                                order: 2;
+                            }
+                            .white-line {
+                                width: 20%;
+                                height: 80%;
+                            }
+                        }
+                    }
+                    .images:nth-child(3) {
+                        justify-content: center;
+                        .block-line {
+                            width: 60%;
+                            display: flex;
+                            justify-content: space-evenly;
+                            .olive-line {
+                                width: 20%;
+                                height: 100%;
+                                order: 2;
+                            }
+                            .white-line {
+                                width: 20%;
+                                height: 60%;
+                            }
+                        }
+                    }
+                    .images:nth-child(4) {
+                        .block-line {
+                            width: 60%;
+                            .olive-line {
+                                width: 100%;
+                                height: 80%;
+                            }
+                        }
+                        .block-line {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+
+
+.site-footer {
+    background-color: $primary;
+    padding: 0;
+    .layout-container {
+        padding: 0;
+        .region-footer-first {
+            width: 100%;
+            #block-custom-bartik-footer {
+                margin: 0;
+                padding: 0;
+                border: none;
+                .site-footer {
+                    color: #ffffff;
+                    padding: 40px 20px;
+                    font-size: 14px;
+                    .footer-container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .footer-section {
+                            flex-basis: 30%;
+                            margin-bottom: 20px;
+                            h4 {
+                                font-size: 18px;
+                                margin-bottom: 15px;
+                                color: #ecf0f1;
+                            }
+                            .footer-menu {
+                                list-style: none;
+                                padding: 0;
+                                li {
+                                    margin-bottom: 10px;
+                                }
+                                a {
+                                    color: #bdc3c7;
+                                    text-decoration: none;
+                                }
+                                a:hover {
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                        .footer-contact {
+                            p, a {
+                                color: #bdc3c7;
+                            }
+                            a:hover {
+                                color: #ffffff;
+                            }
+                        }
+                        .footer-social .social-icons {
+                            list-style: none;
+                            padding: 0;
+                            display: flex;
+                            gap: 10px;
+                            list-style: none;
+                            li a {
+                                color: #bdc3c7;
+                                font-size: 24px;
+                                border-bottom: none;
+                            }
+                            li a:hover {
+                                color: #ffffff;
+                            }
+                        }
+                        .footer-legal {
+                            text-align: center;
+                            width: 100%;
+                            padding-top: 20px;
+                            border-top: 1px solid #bdc3c7;
+                            p {
+                                margin: 0;
+                                color: #bdc3c7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+article h2 {
+    text-align: center;
+    color: $primary;
+}
+
+@media only screen and (max-width: 992px) {
+    .region-header .hamburguer-menu.active {
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #block-custom-bartik-bloqueconcirculos .container-circles {
+        justify-content: center;
+        max-width: 400px;
+    }
+    #block-custom-bartik-contenidoconimagenes .container-images {
+        max-width: 599px;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .region-header {
+        justify-content: center;
+        #block-custom-bartik-site-branding {
+            display: none;
+        }
+        .hamburguer-menu.active {
+            justify-content: center;
+            right: 0;
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+    #block-custom-bartik-bloqueconcirculos .container-circles {
+        max-width: 100px;
+    }
+    #block-custom-bartik-contenidoconimagenes .container-images {
+        max-width: 399px;
+    }
+    #block-custom-bartik-footer .footer-container {
+        justify-content: center !important;
+        .footer-section {
+            min-width: 300px;
+        }
+    }
+}

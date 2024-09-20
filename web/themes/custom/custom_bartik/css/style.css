@@ -1,0 +1,440 @@
+@charset "UTF-8";
+#header {
+  background-color: white;
+  background-image: none;
+}
+#header .section {
+  min-width: 100%;
+}
+#header .section .region-header {
+  background-color: #004a5b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+}
+#header .section .region-header #block-custom-bartik-site-branding {
+  width: 50%;
+  margin: 0;
+  display: flex;
+}
+#header .section .region-header #block-custom-bartik-site-branding .site-branding__text {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  width: 90px;
+  margin-left: 100px;
+}
+#header .section .region-header .header {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 20px;
+}
+#header .section .region-header .header .hamburger {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-right: 100px;
+  z-index: 999;
+}
+#header .section .region-header .header .hamburguer-menu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 60px;
+  right: 70px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px 0;
+  z-index: 998;
+}
+#header .section .region-header .header .hamburguer-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+#header .section .region-header .header .hamburguer-menu ul li {
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+#header .section .region-header .header .hamburguer-menu ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: block;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+#header .section .region-header .header .hamburguer-menu ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #004a5b;
+  transition: width 0.3s ease;
+}
+#header .section .region-header .header .hamburguer-menu ul a:hover {
+  color: #004a5b;
+}
+#header .section .region-header .header .hamburguer-menu ul a:hover::after {
+  width: 100%;
+}
+#header .section .region-header .header .hamburguer-menu .search-form {
+  margin-left: 20px;
+  margin-right: 30px;
+  display: flex;
+  gap: 5px;
+}
+#header .section .region-header .header .hamburguer-menu .search-form input[type=text] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#header .section .region-header .header .hamburguer-menu .search-form button {
+  padding: 8px 12px;
+  background-color: #004a5b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#header .section .region-header .header .hamburguer-menu .search-form button:hover {
+  background-color: #555;
+}
+#header .section .region-header .header .hamburguer-menu.active {
+  display: flex;
+  align-items: center;
+}
+#header .section .region-primary-menu {
+  background-color: white;
+}
+#header .section .region-primary-menu .field--type-text-with-summary {
+  height: 30px;
+}
+#header .section .region-primary-menu .field--type-text-with-summary p {
+  color: #004a5b;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 20px 200px;
+}
+
+#main-wrapper {
+  min-width: 100%;
+}
+#main-wrapper section {
+  padding: 0;
+}
+#main-wrapper section .region-content #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary {
+  min-height: 195px;
+  background-color: #bdb275;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+#main-wrapper section .region-content #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary .container-circles {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main-wrapper section .region-content #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary .container-circles .circle {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main-wrapper section .region-content #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary .container-circles .circle div {
+  width: 100px;
+  height: 100px;
+  background-color: #004a5b;
+  border-radius: 50%;
+}
+#main-wrapper section .region-content #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary .container-circles .circle p {
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+#main-wrapper section .region-content #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary .container-circles .circle.circle1 div {
+  background-image: url("../images/building.png");
+}
+#main-wrapper section .region-content #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary .container-circles .circle.circle2 div {
+  background-image: url("../images/group.png");
+}
+#main-wrapper section .region-content #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary .container-circles .circle.circle3 div {
+  background-image: url("../images/books.png");
+}
+#main-wrapper section .region-content #block-custom-bartik-bloqueconcirculos .field--type-text-with-summary .container-circles .circle.circle4 div {
+  background-image: url("../images/computer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes {
+  background-color: #004a5b;
+  margin-top: 40px;
+  min-height: 380px;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .content-title {
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 20px 50px 10px;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images {
+  width: 200px;
+  display: flex;
+  position: relative;
+  height: 250px;
+  margin-top: 20px;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-line .olive-line {
+  background-color: #bdb275;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-line .white-line {
+  background-color: white;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-images {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-images .image {
+  width: 160px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  margin-bottom: 15px;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-images .image .image-title {
+  height: fit-content;
+  color: white;
+  background-color: #004a5b;
+  font-size: 8px;
+  padding: 4px 10px;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-images .image.plane {
+  background-image: url("../images/avion.png");
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-images .image.olive {
+  background-image: url("../images/olivos.jpg");
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-images .image.brooklyn {
+  background-image: url("../images/puente-brookyn.png");
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-images .image.mountain {
+  background-image: url("../images/montaña-nevada.jpg");
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-images .image.waterfall {
+  background-image: url("../images/cascadas-de-bali.jpg");
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images .block-images .image.autumn {
+  background-image: url("../images/10.otoño.jpg");
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(1) .block-line {
+  width: 30%;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(1) .block-line .olive-line {
+  width: 100%;
+  height: 80%;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(2) {
+  justify-content: center;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(2) .block-line {
+  width: 60%;
+  display: flex;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(2) .block-line .olive-line {
+  width: 80%;
+  height: 80%;
+  order: 2;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(2) .block-line .white-line {
+  width: 20%;
+  height: 80%;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(3) {
+  justify-content: center;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(3) .block-line {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(3) .block-line .olive-line {
+  width: 20%;
+  height: 100%;
+  order: 2;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(3) .block-line .white-line {
+  width: 20%;
+  height: 60%;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(4) .block-line {
+  width: 60%;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(4) .block-line .olive-line {
+  width: 100%;
+  height: 80%;
+}
+#main-wrapper section .region-content #block-custom-bartik-contenidoconimagenes .container-content .container-images .images:nth-child(4) .block-line {
+  margin-left: 20px;
+}
+
+.site-footer {
+  background-color: #004a5b;
+  padding: 0;
+}
+.site-footer .layout-container {
+  padding: 0;
+}
+.site-footer .layout-container .region-footer-first {
+  width: 100%;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer {
+  color: #ffffff;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-section {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ecf0f1;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-section .footer-menu {
+  list-style: none;
+  padding: 0;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-section .footer-menu li {
+  margin-bottom: 10px;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-section .footer-menu a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-section .footer-menu a:hover {
+  color: #ffffff;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-contact p, .site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-contact a {
+  color: #bdc3c7;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-contact a:hover {
+  color: #ffffff;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-social .social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-social .social-icons li a {
+  color: #bdc3c7;
+  font-size: 24px;
+  border-bottom: none;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-social .social-icons li a:hover {
+  color: #ffffff;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-legal {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #bdc3c7;
+}
+.site-footer .layout-container .region-footer-first #block-custom-bartik-footer .site-footer .footer-container .footer-legal p {
+  margin: 0;
+  color: #bdc3c7;
+}
+
+article h2 {
+  text-align: center;
+  color: #004a5b;
+}
+
+@media only screen and (max-width: 992px) {
+  .region-header .hamburguer-menu.active {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #block-custom-bartik-bloqueconcirculos .container-circles {
+    justify-content: center;
+    max-width: 400px;
+  }
+  #block-custom-bartik-contenidoconimagenes .container-images {
+    max-width: 599px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .region-header {
+    justify-content: center;
+  }
+  .region-header #block-custom-bartik-site-branding {
+    display: none;
+  }
+  .region-header .hamburguer-menu.active {
+    justify-content: center;
+    right: 0;
+  }
+  .region-header .hamburguer-menu.active ul {
+    flex-direction: column;
+  }
+  #block-custom-bartik-bloqueconcirculos .container-circles {
+    max-width: 100px;
+  }
+  #block-custom-bartik-contenidoconimagenes .container-images {
+    max-width: 399px;
+  }
+  #block-custom-bartik-footer .footer-container {
+    justify-content: center !important;
+  }
+  #block-custom-bartik-footer .footer-container .footer-section {
+    min-width: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
